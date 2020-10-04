@@ -13,7 +13,34 @@
 		6466065F2528FF0D003395C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6466065D2528FF0D003395C1 /* Main.storyboard */; };
 		646606612528FF0E003395C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646606602528FF0E003395C1 /* Assets.xcassets */; };
 		646606642528FF0E003395C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646606622528FF0E003395C1 /* LaunchScreen.storyboard */; };
+		D10D153525294CEB002D2DA1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D153425294CEB002D2DA1 /* KeyboardViewController.swift */; };
+		D10D153925294CEB002D2DA1 /* MemeChat.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D10D153225294CEB002D2DA1 /* MemeChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D17DE94F25295177009D4996 /* keyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D17DE94E25295177009D4996 /* keyBoardView.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10D153725294CEB002D2DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6466064C2528FF0D003395C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10D153125294CEB002D2DA1;
+			remoteInfo = MemeChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D10D153A25294CEB002D2DA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D10D153925294CEB002D2DA1 /* MemeChat.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		646606542528FF0D003395C1 /* memeKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memeKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,21 @@
 		646606602528FF0E003395C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		646606632528FF0E003395C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646606652528FF0E003395C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10D153225294CEB002D2DA1 /* MemeChat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MemeChat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10D153425294CEB002D2DA1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D10D153625294CEB002D2DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17DE94E25295177009D4996 /* keyBoardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = keyBoardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		646606512528FF0D003395C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D152F25294CEB002D2DA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				646606562528FF0D003395C1 /* memeKeyboard */,
+				D10D153325294CEB002D2DA1 /* MemeChat */,
 				646606552528FF0D003395C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				646606542528FF0D003395C1 /* memeKeyboard.app */,
+				D10D153225294CEB002D2DA1 /* MemeChat.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,16 @@
 			path = memeKeyboard;
 			sourceTree = "<group>";
 		};
+		D10D153325294CEB002D2DA1 /* MemeChat */ = {
+			isa = PBXGroup;
+			children = (
+				D10D153425294CEB002D2DA1 /* KeyboardViewController.swift */,
+				D17DE94E25295177009D4996 /* keyBoardView.xib */,
+				D10D153625294CEB002D2DA1 /* Info.plist */,
+			);
+			path = MemeChat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +127,34 @@
 				646606502528FF0D003395C1 /* Sources */,
 				646606512528FF0D003395C1 /* Frameworks */,
 				646606522528FF0D003395C1 /* Resources */,
+				D10D153A25294CEB002D2DA1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D10D153825294CEB002D2DA1 /* PBXTargetDependency */,
 			);
 			name = memeKeyboard;
 			productName = memeKeyboard;
 			productReference = 646606542528FF0D003395C1 /* memeKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D10D153125294CEB002D2DA1 /* MemeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10D153D25294CEB002D2DA1 /* Build configuration list for PBXNativeTarget "MemeChat" */;
+			buildPhases = (
+				D10D152E25294CEB002D2DA1 /* Sources */,
+				D10D152F25294CEB002D2DA1 /* Frameworks */,
+				D10D153025294CEB002D2DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemeChat;
+			productName = MemeChat;
+			productReference = D10D153225294CEB002D2DA1 /* MemeChat.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +167,9 @@
 				ORGANIZATIONNAME = "Ritik Suryawanshi";
 				TargetAttributes = {
 					646606532528FF0D003395C1 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					D10D153125294CEB002D2DA1 = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
@@ -116,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				646606532528FF0D003395C1 /* memeKeyboard */,
+				D10D153125294CEB002D2DA1 /* MemeChat */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +201,14 @@
 				646606642528FF0E003395C1 /* LaunchScreen.storyboard in Resources */,
 				646606612528FF0E003395C1 /* Assets.xcassets in Resources */,
 				6466065F2528FF0D003395C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D153025294CEB002D2DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17DE94F25295177009D4996 /* keyBoardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D10D152E25294CEB002D2DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D153525294CEB002D2DA1 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10D153825294CEB002D2DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10D153125294CEB002D2DA1 /* MemeChat */;
+			targetProxy = D10D153725294CEB002D2DA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6466065D2528FF0D003395C1 /* Main.storyboard */ = {
@@ -283,6 +380,7 @@
 		646606692528FF0E003395C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C3222KT9Z;
@@ -301,6 +399,7 @@
 		6466066A2528FF0E003395C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C3222KT9Z;
@@ -311,6 +410,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = abc.memeKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D10D153B25294CEB002D2DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C3222KT9Z;
+				INFOPLIST_FILE = MemeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.memeKeyboard.MemeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D10D153C25294CEB002D2DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C3222KT9Z;
+				INFOPLIST_FILE = MemeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.memeKeyboard.MemeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +470,15 @@
 			buildConfigurations = (
 				646606692528FF0E003395C1 /* Debug */,
 				6466066A2528FF0E003395C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10D153D25294CEB002D2DA1 /* Build configuration list for PBXNativeTarget "MemeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10D153B25294CEB002D2DA1 /* Debug */,
+				D10D153C25294CEB002D2DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
